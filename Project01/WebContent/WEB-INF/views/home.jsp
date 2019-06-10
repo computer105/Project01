@@ -8,6 +8,13 @@
 </head>
 <body>
 <h1>Hello World BAs</h1>
+<a href="${pageContext.request.contextPath}/login">login</a>
 <a href="${pageContext.request.contextPath}/about">about</a>
+<a href="${pageContext.request.contextPath}/register">register</a>
+<a href="${pageContext.request.contextPath}/news">news</a>
+<a href="${pageContext.request.contextPath}/usecase">usecase</a>
+
+
+
 </body>
 </html>

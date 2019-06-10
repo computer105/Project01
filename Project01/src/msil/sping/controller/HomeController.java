@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.fasterxml.jackson.annotation.JsonCreator.Mode;
-
 @Controller
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
@@ -24,9 +22,65 @@ public class HomeController {
 		}
 		return model;
 	}
+	@RequestMapping(value = "/about", method = RequestMethod.GET)
 	public ModelAndView about(HttpSession session, HttpServletRequest resquest, HttpServletResponse response) {
 		response.setContentType("text/html;charset=UTF-8");
 		ModelAndView model = new ModelAndView("about");
+		try {
+			return model;
+		} catch (Exception e) {
+			
+		}
+		return model;
+	}
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView login(HttpSession session, HttpServletRequest resquest, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		ModelAndView model = new ModelAndView("login");
+		try {
+			return model;
+		} catch (Exception e) {
+			
+		}
+		return model;
+	}
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public ModelAndView register(HttpSession session, HttpServletRequest resquest, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		ModelAndView model = new ModelAndView("register");
+		try {
+			return model;
+		} catch (Exception e) {
+			
+		}
+		return model;
+	}
+	@RequestMapping(value = "/news", method = RequestMethod.GET)
+	public ModelAndView news(HttpSession session, HttpServletRequest resquest, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		ModelAndView model = new ModelAndView("news");
+		try {
+			return model;
+		} catch (Exception e) {
+			
+		}
+		return model;
+	}
+	@RequestMapping(value = "/usecase", method = RequestMethod.GET)
+	public ModelAndView usecase(HttpSession session, HttpServletRequest resquest, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		ModelAndView model = new ModelAndView("usecase");
+		try {
+			return model;
+		} catch (Exception e) {
+			
+		}
+		return model;
+	}
+	@RequestMapping(value = "/forgot", method = RequestMethod.GET)
+	public ModelAndView forgot(HttpSession session, HttpServletRequest resquest, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		ModelAndView model = new ModelAndView("forgot");
 		try {
 			return model;
 		} catch (Exception e) {
